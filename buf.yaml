@@ -1,5 +1,5 @@
 version: v1
-name: buf.build/GBFA/core.schema
+name: buf.build/ttt/core.schema
 deps: []
 build:
   excludes: []
