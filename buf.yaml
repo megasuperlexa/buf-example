@@ -13,7 +13,6 @@ lint:
       - internals
     ENUM_ZERO_VALUE_SUFFIX:
       - integrations
-      - clients
       - internals
   except:
     - RPC_REQUEST_RESPONSE_UNIQUE
