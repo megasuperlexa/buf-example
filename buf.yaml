@@ -9,7 +9,6 @@ lint:
   ignore_only:
     ENUM_VALUE_PREFIX:
       - integrations
-      - clients
       - internals
     ENUM_ZERO_VALUE_SUFFIX:
       - integrations
