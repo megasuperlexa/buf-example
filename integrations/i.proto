@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "Integrations";
+
+package integrations.v1;
+
+service Srv1Service {
+  rpc GetBalance (GetBalanceRequest) returns (BalanceResponse);
+}
+
+message GetBalanceRequest {
+  bool b = 1;
+}
+
+message BalanceResponse {
+  oneof balance_response {
+    BalanceSuccess balance_success = 1;
+  }
+}
+
+message BalanceSuccess {
+  string balance = 1;
+}

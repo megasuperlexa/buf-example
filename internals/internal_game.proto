@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option csharp_namespace = "Game.Protobuf";
+
+package game.v1;
+
+import "game.proto";
+
+service Srv2Service {
+  rpc GetGames (GetGamesRequest) returns (GetGamesReply);
+}
+
+message GetGamesRequest {
+  int32 limit = 1;
+}
+
+message GetGamesReply {
+  optional int64 total = 1;
+  repeated Game brand_games = 2;
+  ClientTransactionKind kind = 3;
+}
+
+message GetBrandGameRequest {
+  oneof search {
+    string game_id = 2;
+    string game_launch_id = 3;
+  }
+}
+
+message GetBrandGameReply {
+  Game game = 1; 
+}

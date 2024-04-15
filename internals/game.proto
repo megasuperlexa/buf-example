@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "Game.Protobuf";
+
+package game.v1;
+
+message Game {
+  string id = 1;
+  string name = 2;
+}
+
+enum ClientTransactionKind {
+  NO_KIND = 0;
+  KKK = 1;
+  WWW = 2;
+  RRR = 3;
+  CCC = 4;
+}

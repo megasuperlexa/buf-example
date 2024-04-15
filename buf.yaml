@@ -1,0 +1,25 @@
+version: v1
+name: buf.build/GBFA/core.schema.integrations
+deps: []
+build:
+  excludes: []
+lint:
+  use:
+    - DEFAULT
+  except:
+    - RPC_REQUEST_RESPONSE_UNIQUE
+    - RPC_RESPONSE_STANDARD_NAME
+    - RPC_REQUEST_STANDARD_NAME
+    - PACKAGE_DIRECTORY_MATCH
+  allow_comment_ignores: true
+  rpc_allow_same_request_response: true
+  rpc_allow_google_protobuf_empty_requests: false
+  rpc_allow_google_protobuf_empty_responses: false
+  service_suffix: Service
+breaking:
+  use:
+    - FILE
+  except: []
+  ignore: []
+  ignore_only: {}
+  ignore_unstable_packages: false
