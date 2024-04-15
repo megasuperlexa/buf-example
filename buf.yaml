@@ -1,11 +1,20 @@
 version: v1
-name: buf.build/GBFA/core.schema.integrations
+name: buf.build/GBFA/core.schema
 deps: []
 build:
   excludes: []
 lint:
   use:
     - DEFAULT
+  ignore_only:
+    ENUM_VALUE_PREFIX:
+      - integrations
+      - clients
+      - internals
+    ENUM_ZERO_VALUE_SUFFIX:
+      - integrations
+      - clients
+      - internals
   except:
     - RPC_REQUEST_RESPONSE_UNIQUE
     - RPC_RESPONSE_STANDARD_NAME
