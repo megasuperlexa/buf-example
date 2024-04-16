@@ -7,3 +7,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: bufbuild/buf-setup-action@v1
       - uses: bufbuild/buf-lint-action@v1
+      - uses: bufbuild/buf-breaking-action@v1
+        with:
+          against: 'https://github.com/megasuperlexa/buf-example.git#branch=main'
