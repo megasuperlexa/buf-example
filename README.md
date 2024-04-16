@@ -1,3 +1,6 @@
+buf proto linter example  
+
+
 ├── README.md                
 ├── buf.work.yaml            
 ├── buf.yaml                 
@@ -5,4 +8,4 @@
 │   └── i.proto              
 └── internals                
     ├── game.proto           
-    └── internal_game.proto   
+    └── internal_game.proto  
