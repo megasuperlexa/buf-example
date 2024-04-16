@@ -4,7 +4,7 @@ option csharp_namespace = "Game.Protobuf";
 
 package game.v1;
 
-import "game.proto";
+import "internals/game.proto";
 
 service Srv2Service {
   rpc GetGames (GetGamesRequest) returns (GetGamesReply);
