@@ -27,6 +27,7 @@ breaking:
   use:
     - FILE
   except: []
-  ignore: []
+  ignore:
+    - internals
   ignore_only: {}
   ignore_unstable_packages: false
